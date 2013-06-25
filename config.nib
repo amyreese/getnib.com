@@ -1,0 +1,44 @@
+blog:
+    archive:
+        daily: false
+        monthly: true
+        yearly: true
+    templates:
+        archive: archive.html
+        daily: posts.html
+        feed: feed.xml
+        index: posts.html
+        monthly: posts.html
+        post: post.html
+        tag: posts.html
+        tags: list.html
+        yearly: posts.html
+    uris:
+        archive: archive.html
+        daily: '{year}/{month:>02}/{day:>02}.html'
+        feed: feed.xml
+        index: index.html
+        monthly: '{year}/{month:>02}/index.html'
+        tag: tags/{tag}.html
+        tags: tags/index.html
+        yearly: '{year}/index.html'
+defaults:
+    author: John Reese
+    description: null
+    link: null
+    template: page.html
+    title: null
+document_path: documents
+ignore_plugins: []
+load_plugins:
+- '*'
+output_path: site
+resource_path: resources
+site:
+    author: John Reese
+    copyright: John Reese
+    root: /
+    tagline: Static site generator with a content pipeline
+    title: Get Nib
+    uri: http://getnib.com
+template_path: templates

@@ -1,0 +1,12 @@
+{% extends "page.html" %}
+{% block page %}
+<div class="posts">
+{%- if page.title %}
+<h2 class="title">{{ breadcrumbs(page) }}</h2>
+{%- endif %}
+{{ content }}
+{% for p in pages | sort(reverse=True, attribute='date') %}
+{{ post(p, short=True) }}
+{% endfor %}
+</div>
+{% endblock %}
