@@ -3,7 +3,7 @@ puburi=liara:/srv/www/nib/
 
 .PHONY:
 build:
-	nib --debug
+	nib --debug build
 
 .PHONY:
 publish: clean build
