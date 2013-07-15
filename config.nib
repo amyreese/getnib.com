@@ -39,6 +39,6 @@ site:
     copyright: John Reese
     root: /
     tagline: Static site generator with a content pipeline
-    title: Get Nib
+    title: Nib
     uri: http://getnib.com
 template_path: templates
